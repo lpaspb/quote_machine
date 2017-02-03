@@ -12,7 +12,7 @@ $(document).ready(function(){
         newStr = letterArr.join("");
         console.log(letterArr.length);
         if (letterArr.length > 90) {
-            newStr = newStr.slice(0, 120) + "..."
+            newStr = newStr.slice(0, 105) + "..."
             $('.quote__par').html(newStr);
         } else {
             $('.quote__par').html(JSON.stringify(data[0].content).replace(/\"/g, "").replace(/\\n/g, ""));
@@ -38,7 +38,7 @@ $(document).ready(function(){
         newStr = letterArr.join("");
         console.log(letterArr.length);
         if (letterArr.length >= 90) {
-            newStr = newStr.slice(0, 120) + "..."
+            newStr = newStr.slice(0, 105) + "..."
             $('.quote__par').html(newStr);
         } else {
             $('.quote__par').html(JSON.stringify(data[0].content).replace(/\"/g, "").replace(/\\n/g, ""));
