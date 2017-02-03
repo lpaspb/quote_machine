@@ -1,45 +1,59 @@
 body {
     
-    background-color: #ecf0f1;
+    /*background-color:  #8BCBDE;*/
+  background: #780206; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #780206 , #061161); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #780206 , #061161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        
+
 }
 
 
 .quote__container {
-    width: 720px;
+    width: 900px;
     margin: 0 auto;
-    margin-top: 200px;
-    background-color: white;
+    margin-top: 220px;
+   
     
     border-radius: 3px;
     padding: 10px;
     position: relative;
-    -webkit-box-shadow: 0px 0px 45px -16px rgba(0,0,0,1);
--moz-box-shadow: 0px 0px 45px -16px rgba(0,0,0,1);
-box-shadow: 0px 0px 45px -16px rgba(0,0,0,1);
+   
 }
 
 .quote__text {
-    background-color: white;
-    margin-bottom: 40px;
+    
+    margin-bottom: 25px;
     text-align: center;
-    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: left;
 font-family: 'Droid Serif', serif;
+    color: white;
   
     
     
 }
 .quote__par {
 font-family: 'Droid Serif', serif;
-font-size: 24px;
+font-size: 36px;
 letter-spacing: 0.3px;
-line-height: 35px;
+line-height: 55px;
+    font-weight: 400;
+   
+    
+}
+.quote__author {
+font-family: 'Droid Serif', serif;
+font-weight: 400;
    
     
 }
 .quote__bottom {
     display: flex;
     justify-content: space-between;
+   
    
     
 }
