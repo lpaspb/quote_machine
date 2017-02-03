@@ -2,7 +2,7 @@ $(document).ready(function(){
    
     var callback = 1;
     
-    $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=${callback}", function(data){
+    $.getJSON("https://cors.now.sh/http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=${callback}", function(data){
             
            $('.quote__par').html(JSON.stringify(data[0].content).replace(/\"/g, "").replace(/\\n/g, ""));
             $('.quote__author').html(JSON.stringify(data[0].title).replace(/\"/g, ""));
@@ -14,7 +14,7 @@ $(document).ready(function(){
     $('.quote__new').on('click', function() {
          callback++;
          console.log(callback);
-        $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=" + callback, function(data){
+        $.getJSON("https://cors.now.sh/http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=" + callback, function(data){
             
             $('.quote__par').html(JSON.stringify(data[0].content).replace(/\"/g, "").replace(/\\n/g, ""));
             $('.quote__author').html(JSON.stringify(data[0].title).replace(/\"/g, ""));
@@ -25,7 +25,7 @@ $(document).ready(function(){
      $('#twitter').on('click', function() {
          console.log($('#twitter').attr('href'));
          
-         $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=" + callback, function(data){
+         $.getJSON("https://cors.now.sh/http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=" + callback, function(data){
             
             $('.quote__par').html(JSON.stringify(data[0].content).replace(/\"/g, "").replace(/\\n/g, ""));
             $('.quote__author').html(JSON.stringify(data[0].title).replace(/\"/g, ""));
