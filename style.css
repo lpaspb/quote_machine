@@ -18,7 +18,7 @@ background: linear-gradient(to left, #780206 , #061161); /* W3C, IE 10+/ Edge, F
     
     border-radius: 3px;
     padding: 10px;
-    position: relative;
+
    
 }
 
@@ -28,25 +28,28 @@ background: linear-gradient(to left, #780206 , #061161); /* W3C, IE 10+/ Edge, F
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: left;
-font-family: 'Droid Serif', serif;
+    text-align: center;
+font-family: 'Open Sans', sans-serif;
+
     color: white;
   
     
     
 }
 .quote__par {
-font-family: 'Droid Serif', serif;
-font-size: 36px;
-letter-spacing: 0.3px;
-line-height: 55px;
-    font-weight: 400;
+
+font-size: 20px;
+letter-spacing: 0.7px;
+line-height: 35px;
+font-weight: 100;
+   
    
     
 }
 .quote__author {
-font-family: 'Droid Serif', serif;
-font-weight: 400;
+
+font-weight: 500;
+font-size: 14px;
    
     
 }
@@ -65,6 +68,10 @@ font-weight: 400;
 }
 .quote__new {
     background-color:coral;
+   
+}
+.quote__new:hover {
+    background-color:orange;
    
 }
 
