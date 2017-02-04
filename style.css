@@ -52,15 +52,29 @@ letter-spacing: 0.7px;
 line-height: 35px;
 font-weight: 100;
    
+
+   
+    
+}
+.quote__par {
+
+font-size: 20px;
+letter-spacing: 0.7px;
+line-height: 35px;
+font-weight: 100;
+   
+
    
     
 }
 .quote__author {
 
-font-weight: 500;
+font-weight: 200;
 font-size: 14px;
+font-style: italic;
    
-    
+
+
 }
 .quote__bottom {
     display: flex;
